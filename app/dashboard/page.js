@@ -6,7 +6,7 @@ export const metadata = {
     title: "Soul State · Dashboard",
 };
 export default function DashboardPage() {
-    const isAuthenticated = false
+    const isAuthenticated = true
     let children = (<Login />)
 
     if (isAuthenticated) {
