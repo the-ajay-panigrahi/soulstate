@@ -1,5 +1,10 @@
-export default function Home() {
+import Hero from "@/components/Hero.js";
+import Main from "@/components/Main.js";
+
+export default function HomePage() {
   return (
-   <div>Home Page</div>
+    <Main>
+      <Hero/>
+    </Main>
   );
 }
