@@ -1,6 +1,7 @@
 import { Fugaz_One, Open_Sans } from "next/font/google"
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const opensans = Open_Sans({ subsets: ["latin"] })
 const fugaz = Fugaz_One({ subsets: ["latin"], weight: ['400'] })
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
       <body className={"w-full max-w-[1000px] mx-auto text-sm sm:text-base min-h-screen flex flex-col text-slate-800 " + opensans.className}>
         <Header />
         {children}
-        <footer>Footer</footer>
+       <Footer/>
       </body>
     </html >
   );
